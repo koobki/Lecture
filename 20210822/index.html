@@ -1,1 +1,67 @@
-test
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <title>회원정보수정</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+   
+    <div class="container">
+         <h1>회원정보수정</h1>
+        <table>
+            <colgroup>
+                <col width="100px">
+                <col width="100px">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td><label class="header">이름</label></td>
+                    <td><input type="text" id="userNm" value="홍길동"></td>
+                </tr>
+                 <tr>
+                    <td><label class="header">나이</label></td>
+                    <td><input type="number" id="userAge" value="20" class="number"></td>
+                </tr>
+                <tr>
+                    <td><label class="header">성별</label></td>
+                    <td><input type="radio" id="male" name='userGender' checked="true">
+                        <label for="male">남자</label>
+                        <input type="radio" id="female" name='userGender'>
+                        <label for="female">여자</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="header">취미</label></td>
+                    <td>
+                        <select name="habbit" id="habbit">
+                          <option value="">선택</option>
+                          <option value="1">프로그래밍</option>
+                          <option value="2">독서</option>
+                          <option value="3">운동</option>
+                          <option value="4">게임</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id='search'>
+        <input id="btnSave" type="button" class="button" value="저장" onclick="btnSaveClick()">
+        </div>
+    </div>
+</body>
+<script>
+function btnSaveClick(){
+    var habbit = document.getElementById("habbit");
+    if(habbit.value ==''){
+
+        alert("취미를 선택해 주세요");
+        return;
+    }
+    var name = document.getElementById("userNm");
+    alert(name.value + '님의 취미가 ' +  habbit.options[habbit.selectedIndex].text + '이군요!');
+}
+</script>
+
+</html>
