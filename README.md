@@ -10,19 +10,18 @@
 **8/25(수)**
 - template 을 이용한 목록 출력
 - ajax
-- - vscode "open in browser" 검색 후 설치
-- - alt + b 로 브라우져 바로 실행
+-  vscode 팁
+  -  "open in browser" 검색 후 설치
+  -  alt + b 로 브라우져 바로 실행
 
 **8/26(목)**
-- Ajax를 통한 데이터 조회 및 출력
+- 미디어 쿼리를 이용해 반응형 웹 구현
 
 **8/27(금)**
-- JavaScript 기본
-- DOM 접근
+- 무한스크롤 (Infinity Scroll) UI 구현하기
 
 **8/30(월)**
-- ES6
-- Ajax(XHR)
+- 무한스크롤 (Infinity Scroll) UI 구현하기
 
 **8/31(화)**
 - 실습과제 진행
