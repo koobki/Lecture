@@ -8,8 +8,10 @@
 - VS CODE Git연동 및 활용
 
 **8/25(수)**
-- html 기본
-  - 폼 및 데이터 검증   
+- template 을 이용한 목록 출력
+- ajax
+- - vscode "open in browser" 검색 후 설치
+- - alt + b 로 브라우져 바로 실행
 
 **8/26(목)**
 - Ajax를 통한 데이터 조회 및 출력
