@@ -16,6 +16,7 @@
 
 **8/26(목)**
 - 미디어 쿼리를 이용해 반응형 웹 구현
+  - css - flex 참고페이지 : https://studiomeal.com/archives/197
 
 **8/27(금)**
 - 무한스크롤 (Infinity Scroll) UI 구현하기
