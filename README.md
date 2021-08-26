@@ -17,9 +17,19 @@
 **8/26(목)**
 - 미디어 쿼리를 이용해 반응형 웹 구현
   - css - flex 참고페이지 : https://studiomeal.com/archives/197
+  - 무한스크롤 (Infinity Scroll) UI 구현하기
 
 **8/27(금)**
-- 무한스크롤 (Infinity Scroll) UI 구현하기
+- 유용한 VSCODE  Extensions
+- - Material theme --> 테마컬러 설정
+- -Material Icon Theme --> 아이콘 변경
+- -prettier --> formatter(적용 : 설정 > save)
+- -Bracket Pair Colorizer 2
+- -Indent-Rainbow
+- --Auto Rename Tag --> 여는 테그 수정시 닫는 태그도 같이 수정
+- -css peek --> css 적용 찾기
+- - html css support --> 정의된 css 자동완성
+- -live server
 
 **8/30(월)**
 - 무한스크롤 (Infinity Scroll) UI 구현하기
