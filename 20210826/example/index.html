@@ -2,7 +2,7 @@
 <html lang="kor">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <meta name="viewport" content="width=device-width", initial-scale=1.0, maximum-scale=1.0, user-scalable=no>
     <title>주간식단정보</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./media.css">
@@ -54,16 +54,13 @@
         win.scroll(function(){
             console.log($(document).height());
             console.log(win.height());
-            console.log(win.scrollTop());
-            console.log($(document).height() - win.height());
-            if($(document).height() - win.height() <= win.scrollTop() ){
+            console.log('scrollTop : ' + win.scrollTop());
+            console.log( '빼기한 값 : ' + ($(document).height() - win.height()));
+            if($(document).height() - win.height() <= win.scrollTop() +1){
                 setSchDt(tmpEndDt);
                 get_meal()
             }
         });
-
-
-
 });
     function get_meal(){
         console.log(startDt);
@@ -85,6 +82,9 @@
                 success:function(data){
                     try{
                         var t = JSON.parse(data);
+                        if(t.mealServiceDietInfo ===undefined){
+                            return;
+                        }
                         var mealList=t.mealServiceDietInfo[1].row;
                         for (var i = 0; i < mealList.length; i++) {
                                 let tmpMeal=$($('#tempMeal').html());
