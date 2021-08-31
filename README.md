@@ -60,10 +60,12 @@
 
 
 **8/30(월)**
-- 무한스크롤 (Infinity Scroll) UI 구현하기
+- youtube clone coding
+ - cdnjs.com
+ -크롬 확장 : color picker
 
 **8/31(화)**
-- 실습과제 진행
+- youtube clone coding
 
 **9/1(수)**
 - 실습과제 진행
