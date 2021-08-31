@@ -1,0 +1,55 @@
+:root{
+    /* Color */
+--white-color: #FFFFFF;
+--black-color: #212121;
+--blue-color: #4180DC;
+--red-color: #E72B00;
+--grey-dart-color: #656565;
+--grey-light-color: #E0E0E0;
+    /* Size */
+--padding: 12px;
+
+    /* Font Size */
+--font-large: 18px;
+--font-medium: 14px;
+--font-small: 12px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;;
+}
+
+button,
+button:focus {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: var(--white-color);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: var(--padding);
+}
+
+header .logo {
+    font-size: var(--font-large);
+}
+
+header .logo i{
+color: var(--red-color);
+}
+
+header .search i.fa-search {
+    margin-right: var(--padding);
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale=1.0, maximum-scale=1.0, user-scalable=no>
-    <title>주간식단정보</title>
+    <title>주간 식단 정보</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./media.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display&display=swap"
@@ -13,7 +13,6 @@
 <body>
     <section class="section">
         <div class="container">
-
             <div class="section-header">
                 <h1 class="section-header-title">주간급식정보</h1>
                 <p>성일정보고</p>
@@ -49,7 +48,6 @@
     $(document).ready(function(){
         setSchDt();
         get_meal();
-
         var win = $(window);
         win.scroll(function(){
             console.log($(document).height());

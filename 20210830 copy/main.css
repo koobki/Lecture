@@ -1,0 +1,246 @@
+:root{
+    /* Color */
+--white-color: #FFFFFF;
+--black-color: #212121;
+--blue-color: #4180DC;
+--red-color: #E72B00;
+--grey-dart-color: #656565;
+--grey-light-color: #E0E0E0;
+
+    /* Size */
+--padding: 12px;
+--avatar-size:36px;
+
+    /* Font Size */
+--font-large: 18px;
+--font-medium: 14px;
+--font-small: 12px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;;
+}
+
+button,
+button:focus {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--white-color);
+}
+
+ul {
+    list-style: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: var(--padding);
+}
+
+header .logo {
+    font-size: var(--font-large);
+}
+
+header .logo i{
+color: var(--red-color);
+}
+
+header .search i.fa-search {
+    margin-right: var(--padding);
+}
+
+.videoPlay {
+    text-align: center;
+    background-color: var(--black-color);
+    position: sticky;
+    top: 0px;
+}
+
+.videoPlay video {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+}
+
+/* info */
+.video .metainfo {
+    padding: var(--padding);
+}
+
+.video .metainfo .hashTag {
+    display: flex;
+    color: var(--blue-color);
+    font-size: var(--font-small);
+}
+
+.video .metainfo .hashTag li {
+    margin-right: var(--padding);
+}
+
+.video .metainfo .titleAndButton {
+    display: flex;
+    /* margin: calc(var(--padding)/4) 0px; */
+}
+
+.video .metainfo .titleAndButton .title {
+    font-size: var(--font-large);
+    color: var(--black-color);
+    margin-right: var(--padding);
+}
+
+.video .metainfo .titleAndButton .more {
+    height: 100%;
+    font-size: var(--font-large);
+}
+
+.video .metainfo .readCount {
+    font-size: var(--font-small);
+    color: var(--grey-dart-color);
+}
+
+.video .actionBtn {
+    display: flex;
+    justify-content: space-around;
+    margin: var(--padding);
+}
+
+.video .actionBtn button {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-medium);
+    color: var(--grey-dart-color);
+}
+
+.video .actionBtn button i {
+    font-size: var(--font-large);
+    margin: 0 auto;
+    margin-bottom: calc(var(--padding)/2);
+}
+
+.video .actionBtn button i.active {
+    color: var(--blue-color);
+}
+
+.video .channelInfo {
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--grey-light-color);
+    border-bottom: 1px solid var(--grey-light-color);
+}
+.video .channelInfo .metadata {
+    display: flex;
+    align-items: center;
+}
+.video .channelInfo .metadata img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    margin-right: var(--padding);
+    border-radius: 50%;
+}
+
+.video .channelInfo .metadata .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.video .channelInfo .metadata .info .channelName {
+    font-size: var(--font-medium);
+    color: var(--black-color);
+}
+
+.video .channelInfo .metadata .info .readCnt {
+    font-size: var(--font-small);
+    color: var(--grey-dart-color);
+}
+
+.video .channelInfo .subscribe {
+    font-size: var(--font-medium);
+    color: red;
+}
+
+.video .replyInfo {
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey-light-color);
+}
+
+.video .replyInfo .reply {
+    font-size: var(--font-medium);
+    color: var(--black-color);
+}
+
+.video .replyInfo .moreInfo {
+    font-size: var(--font-medium);
+    color: var(--grey-dart-color);
+}
+
+/* 다음동영상 */
+
+.nextUp {
+    padding: var(--padding)
+}
+
+.nextUp .next {
+    font-size: var(--font-medium);
+    color: var(--black-color);
+}
+
+.nextUp .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.nextUp .item .img img {
+    width: 100%;
+    margin: var(--padding) 0;
+
+
+}
+.nextUp .item .info {
+    display: flex;
+}
+
+.nextUp .item .info img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    margin-right: var(--padding);
+}
+
+.nextUp .item .info .metaInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.nextUp .item .info .metaInfo .title {
+    font-size: var(--font-medium);
+    color: var(--black-color);
+}
+
+.nextUp .item .info .metaInfo .name {
+    font-size: var(--font-small);
+    color: var(--grey-dart-color);
+}
+
+@media (min-width: 899px) {
+    .contents {
+        display: flex;
+    }
+    .nextUp {
+        width: 40%;
+    }
+}
+
