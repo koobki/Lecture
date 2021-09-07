@@ -13,6 +13,7 @@
 --font-large: 18px;
 --font-medium: 14px;
 --font-small: 12px;
+--avatar-size: 36px;
 }
 
 * {
@@ -30,9 +31,12 @@ button:focus {
     border: none;
     cursor: pointer;
     outline: none;
-    color: var(--white-color);
+    background-color: var(--white-color);
 }
 
+ul {
+    list-style: none;
+}
 
 header {
     display: flex;
@@ -52,4 +56,198 @@ color: var(--red-color);
 
 header .search i.fa-search {
     margin-right: var(--padding);
+}
+
+header .search button {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.contents .video .videoPlay {
+    text-align: center;
+    background-color: var(--black-color);
+    position: sticky;
+    top:0px;
+}
+
+.contents .video .videoPlay video {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+}
+
+.contents .video > .metainfo {
+    padding: var(--padding);
+}
+
+.contents .video .metainfo .hashTag {
+    display: flex;
+    color: var(--blue-color);
+    font-size: var(--font-small);
+}
+
+.contents .video .metainfo .hashTag li {
+    margin-right: var(--padding);
+}
+
+.contents .video .metainfo .title{
+    display: flex;
+}
+
+.contents .video .metainfo .title span{
+    font-size: var(--font-large);
+    color: var(--black-color);
+    margin-right: var(--padding);
+}
+
+.contents .video .metainfo .title .more {
+    height: 100%;
+    font-size: var(--font-large);
+}
+
+.contents .video .metainfo .readCount {
+    font-size: var(--font-small);
+    color: var(--grey-dart-color);
+}
+
+.contents .video .actionBtn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contents .video .actionBtn li button {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-medium);
+    color: var(--grey-dart-color);
+}
+.contents .video .actionBtn li button i{
+    font-size: var(--font-large);
+    color: var(--grey-dart-color);
+    margin: 0 auto;
+    margin-bottom: calc(var(--padding)/2);
+}
+
+.contents .video .channelInfo {
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--padding);
+    border-top: 1px solid var(--grey-light-color);
+    border-bottom: 1px solid var(--grey-light-color);
+}
+
+.contents .video .channelInfo > .metainfo{
+    display: flex;
+    align-items: center;
+}
+
+.contents .video .channelInfo > .metainfo .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.contents .video .channelInfo > .metainfo img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    margin-right: var(--padding);
+}
+
+.contents .video .channelInfo > .metainfo .info .channelName {
+    font-size: var(--font-medium);
+    color: var(--black-color);
+}
+
+.contents .video .channelInfo > .metainfo .info .readCnt {
+    font-size: var(--font-small);
+    color: var(--grey-dart-color);
+}
+
+.contents .video .channelInfo .subcribe {
+    font-size: var(--font-medium);
+    color: var(--red-color);
+}
+
+.contents .video .replyInfo {
+    display: flex;
+    padding: var(--padding);
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey-light-color);
+}
+
+.contents .video .replyInfo .reply {
+    font-size: var(--font-medium);
+    color: var(--grey-dart-color);
+}
+
+.contents .video .replyInfo .moreInfo{
+    font-size: var(--font-medium);
+    color: var(--grey-dart-color);
+}
+
+/* 다음동영상 */
+.nextUp {
+    margin-top: var(--padding);
+    padding: var(--padding);
+}
+
+
+.nextUp .next {
+    font-size: var(--font-medium);
+    color: var(--grey-dart-color);
+}
+
+.nextUp .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.nextUp .item > img {
+    width: 100%;
+    margin: var(--padding) 0;
+} 
+
+.nextUp .item .info{
+    display: flex;
+}
+.nextUp .item .info img{
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    margin-right: var(--padding);
+}
+
+.nextUp .item .info .metaInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.nextUp .item .info .metaInfo .titleAndBtn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nextUp .item .info .metaInfo .titleAndBtn .title {
+    font-size: var(--font-medium);
+    color: var(--black-color);
+}
+
+.nextUp .item .info .metaInfo .titleAndBtn button{
+    color: var(--grey-dart-color);
+}
+
+.nextUp .item .info .metaInfo .name {
+    font-size: var(--font-small);
+    color: var(--grey-dart-color);
+}
+
+@media (min-width:800px) {
+    .contents {
+        display: flex;
+        flex-direction: row;
+    }
+    section.nextUp {
+        max-width: 400px;
+    }
 }
